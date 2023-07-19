@@ -1,0 +1,120 @@
+.gradient-background {
+  background: linear-gradient(150deg, #be1313, #e66262, #fffefe);
+  background-size: 190% 190%;
+  animation: gradient-animation 5s ease infinite;
+  height: 50vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.greet-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/343670.webp");
+  opacity: 0.8;
+}
+.greet-section > h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+.personal-info {
+  margin-top: 10%;
+  text-align: center;
+}
+.personal-info > h3,
+h4 {
+  font-size: 25pt;
+}
+
+.info {
+  margin-top: 50px;
+  margin:100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#userphoto {
+  border-radius: 50%;
+  width: 15rem;
+  border: 5px solid red;
+  padding: 10px;
+  margin-bottom: 10%;
+}
+.about {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 10%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills > h1 {
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: 5%;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 80px;
+}
+.item {
+  border-right: 1px solid gray;
+  box-shadow: 12px 12px 20px 0px black;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  margin-top: 100px;
+  color: white;
+  padding: 20px;
+}
+.item > img {
+  border-radius: 50%;
+  width: 10rem;
+}
+.item > h3 {
+  font-size: 25pt;
+  font-weight: bold;
+}
+.item > p {
+  font-size: 20pt;
+  grid-column: 2 span;
+}
+
+
+.bottom-container {
+  height: 70vh;
+  background-color: black;
+}
