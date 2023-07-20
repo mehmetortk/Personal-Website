@@ -1,5 +1,5 @@
 .gradient-background {
-  background: linear-gradient(150deg, #be1313, #e66262, #fffefe);
+  background: linear-gradient(60deg, #be1313, #ee4949, #e78b1b);
   background-size: 190% 190%;
   animation: gradient-animation 5s ease infinite;
   height: 50vh;
@@ -27,7 +27,7 @@
 .greet-section > h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .middle-container {
@@ -38,17 +38,17 @@
   height: 150vh;
 }
 .personal-info {
-  margin-top: 10%;
+  margin-top: 30%;
   text-align: center;
 }
 .personal-info > h3,
 h4 {
-  font-size: 25pt;
+  font-size: 15pt;
 }
 
 .info {
   margin-top: 50px;
-  margin:100px 0;
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +59,7 @@ h4 {
   width: 15rem;
   border: 5px solid red;
   padding: 10px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .about {
   font-size: 20px;
@@ -69,8 +69,8 @@ h4 {
 
 .skills {
   width: 100%;
-  margin-top: 10%;
-  height: 60vh;
+  margin-top: 1%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,42 +79,131 @@ h4 {
 .skills > h1 {
   width: 50%;
   text-align: center;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2rem;
   margin-top: 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .item-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 25px;
 }
 .item {
+  background: linear-gradient(150deg, #e9eca2, #eaf295, #ffff);
+  background-size: 360% 360%;
+  animation: gradient-animation 5s ease infinite;
   border-right: 1px solid gray;
   box-shadow: 12px 12px 20px 0px black;
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 200px 200px;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
   margin-top: 100px;
-  color: white;
-  padding: 20px;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
 }
 .item > img {
   border-radius: 50%;
-  width: 10rem;
+  width: 5rem;
 }
 .item > h3 {
-  font-size: 25pt;
+  font-size: 15pt;
   font-weight: bold;
 }
 .item > p {
-  font-size: 20pt;
+  font-size: 10pt;
   grid-column: 2 span;
 }
 
-
 .bottom-container {
   height: 70vh;
-  background-color: black;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 60px 60px 60px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 100px;
+}
+.contact > a > img {
+  width: 4rem;
+  border-radius: 40%;
+  margin-left: 10px;
+}
+.contact > h1,
+p {
+  text-align: center;
+  grid-column: span 3;
+}
+hr {
+  width: 80%;
+  box-shadow: 2px 5px 1px 1px black;
+}
+@media screen and (max-width: 768px) {
+  .middle-container {
+    height: auto; /* Adjusting the height as per content */
+    margin-top: 100px; /* Reduce the top margin */
+  }
+  
+  .personal-info {
+    margin-top: 10%; /* Reduce the top margin */
+  }
+  
+  .info {
+    margin-top: 20px; /* Reduce the top margin */
+    margin-bottom: 30px; /* Reduce the bottom margin */
+  }
+  
+  .skills {
+    height: auto; /* Adjusting the height as per content */
+  }
+  
+  .item-container {
+    gap: 15px; /* Reduce the gap between items */
+    margin-top: 50px; /* Reduce the top margin */
+  }
+  
+  .bottom-container {
+    height: auto; /* Adjusting the height as per content */
+    margin-top: 50px; /* Reduce the top margin */
+  }
+  
+  .contact {
+    height: auto;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 60px 60px 60px;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    column-gap: 0;
+    margin-top: 50px;
+  }
+  
+  .contact > a > img {
+    width: 3rem; /* Reduce the image size */
+    margin-left: 5px; /* Reduce the left margin */
+  }
+  
+  .contact > h1,
+  p {
+    text-align: center;
+    grid-column: span 3; /* Set the grid span to 1 column */
+  }
+  
+  hr {
+    width: 100%; /* Make the horizontal rule full width */
+  }
 }
